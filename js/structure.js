@@ -56,3 +56,10 @@ function Lien() {
 	parent.location.href = url;
 }
 
+function toggleVisibility(listId) {
+  const list = document.getElementById(listId);
+  if (list) {
+      // Toggle the 'hidden' class
+      list.classList.toggle('hidden');
+  }
+}
