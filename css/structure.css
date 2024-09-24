@@ -99,12 +99,12 @@ section li.section-subheading {
 
 
 ::-moz-selection {
-  background: #99D9EA;
+  background: #7761d1;
   text-shadow: none;
 }
 
 ::selection {
-  background: #99D9EA;
+  background: #7761d1;
   text-shadow: none;
 }
 
