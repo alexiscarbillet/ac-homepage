@@ -657,10 +657,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   height:187px;
 }
 
-.hidden {
-  display: none;
-}
-
 /* Ensure that the list items are aligned properly */
 #w .centered-list, 
 #w .sub-centered-list, 
