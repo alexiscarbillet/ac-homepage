@@ -658,28 +658,28 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 /* Ensure that the list items are aligned properly */
-#w .centered-list, 
-#w .sub-centered-list, 
-#w .sub-sub-centered-list, 
-#w .sub-sub-sub-centered-list {
+#pp .centered-list, 
+#pp .sub-centered-list, 
+#pp .sub-sub-centered-list, 
+#pp .sub-sub-sub-centered-list {
   list-style-type: none; /* Remove default list bullets */
   padding-left: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
 }
 
 /* Ensure that nested lists are indented */
-#w .sub-centered-list, 
-#w .sub-sub-centered-list, 
-#w .sub-sub-sub-centered-list {
+#pp .sub-centered-list, 
+#pp .sub-sub-centered-list, 
+#pp .sub-sub-sub-centered-list {
   padding-left: 20px; /* Adjust indentation for nested lists */
 }
 
 /* Basic styling for list items */
-#w .centered-list-item, 
-#w .sub-centered-list-item, 
-#w .sub-sub-centered-list-item, 
-#w .sub-sub-sub-centered-list-item, 
-#w .sub-sub-sub-sub-centered-list-item {
+#pp .centered-list-item, 
+#pp .sub-centered-list-item, 
+#pp .sub-sub-centered-list-item, 
+#pp .sub-sub-sub-centered-list-item, 
+#pp .sub-sub-sub-sub-centered-list-item {
   cursor: pointer; /* Pointer cursor on clickable items */
   user-select: none; /* Prevent text selection */
 }
@@ -690,20 +690,20 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 /* Optionally, add some visual styling to indicate clickable items */
-#w .centered-list-item:hover, 
-#w .sub-centered-list-item:hover, 
-#w .sub-sub-centered-list-item:hover, 
-#w .sub-sub-sub-centered-list-item:hover, 
-#w .sub-sub-sub-sub-centered-list-item:hover {
+#pp .centered-list-item:hover, 
+#pp .sub-centered-list-item:hover, 
+#pp .sub-sub-centered-list-item:hover, 
+#pp .sub-sub-sub-centered-list-item:hover, 
+#pp .sub-sub-sub-sub-centered-list-item:hover {
   text-decoration: underline; /* Underline on hover */
 }
 
 /* Optional: Add some spacing between items */
-#w .centered-list-item, 
-#w .sub-centered-list-item, 
-#w .sub-sub-centered-list-item, 
-#w .sub-sub-sub-centered-list-item, 
-#w .sub-sub-sub-sub-centered-list-item {
+#pp .centered-list-item, 
+#pp .sub-centered-list-item, 
+#pp .sub-sub-centered-list-item, 
+#pp .sub-sub-sub-centered-list-item, 
+#pp .sub-sub-sub-sub-centered-list-item {
   margin-bottom: 5px; /* Space between items */
 }
 

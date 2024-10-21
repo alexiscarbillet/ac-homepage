@@ -63,3 +63,4 @@ function toggleVisibility(listId) {
       list.classList.toggle('hidden');
   }
 }
+
