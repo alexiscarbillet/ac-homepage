@@ -285,12 +285,112 @@ function updateAppCount() {
   document.getElementById('sql-count').textContent = count51;
 
   // prom
+  const listItems52 = document.querySelectorAll('#prom-list1 li');
+  const count52 = listItems52.length;
+  document.getElementById('prom-count1').textContent = count52;
+
+  const listItems53 = document.querySelectorAll('#prom-list2 li');
+  const count53 = listItems53.length;
+  document.getElementById('prom-count2').textContent = count53;
+
+  const listItems54 = document.querySelectorAll('#prom-list3 li');
+  const count54 = listItems54.length;
+  document.getElementById('prom-count3').textContent = count54;
+
+  const listItems55 = document.querySelectorAll('#prom-list4 li');
+  const count55 = listItems55.length;
+  document.getElementById('prom-count4').textContent = count55;
+
+  const listItems56 = document.querySelectorAll('#prom-list5 li');
+  const count56 = listItems56.length;
+  document.getElementById('prom-count5').textContent = count56;
 
   // AI
+  const listItems57 = document.querySelectorAll('#ai-list1 li');
+  const count57 = listItems57.length;
+  document.getElementById('ai-count1').textContent = count57;
+
+  const listItems58 = document.querySelectorAll('#nn-list li');
+  const count58 = listItems58.length;
+  document.getElementById('ai-count3').textContent = count58;
+
+  const listItems59 = document.querySelectorAll('#ai-list3 li');
+  const count59 = listItems59.length;
+  document.getElementById('ai-count4').textContent = count59;
+
+  const listItems60 = document.querySelectorAll('#ai-list4 li');
+  const count60 = listItems60.length;
+  document.getElementById('ai-count5').textContent = count60;
+
+  const listItems61 = document.querySelectorAll('#ai-list5 li');
+  const count61 = listItems61.length;
+  document.getElementById('ai-count6').textContent = count61;
+
+  const listItems62 = document.querySelectorAll('#ai-list6 li');
+  const count62 = listItems62.length;
+  document.getElementById('ai-count7').textContent = count62;
+
+  const listItems63 = document.querySelectorAll('#ai-list2 li');
+  const count63 = listItems63.length;
+  document.getElementById('ai-count2').textContent = count63 - 1;
 
   // Data Viz
+  const listItems64 = document.querySelectorAll('#viz-list1 li');
+  const count64 = listItems64.length;
+  document.getElementById('viz-count1').textContent = count64;
+
+  const listItems65 = document.querySelectorAll('#viz-list2 li');
+  const count65 = listItems65.length;
+  document.getElementById('viz-count2').textContent = count65;
+
+  const listItems66 = document.querySelectorAll('#viz-list3 li');
+  const count66 = listItems66.length;
+  document.getElementById('viz-count3').textContent = count66;
+
+  const listItems67 = document.querySelectorAll('#viz-list4 li');
+  const count67 = listItems67.length;
+  document.getElementById('viz-count4').textContent = count67;
+
+  const listItems68 = document.querySelectorAll('#viz-list5 li');
+  const count68 = listItems68.length;
+  document.getElementById('viz-count5').textContent = count68;
+
+  const listItems69 = document.querySelectorAll('#viz-list6 li');
+  const count69 = listItems69.length;
+  document.getElementById('viz-count6').textContent = count69;
+
+  const listItems70 = document.querySelectorAll('#viz-list7 li');
+  const count70 = listItems70.length;
+  document.getElementById('viz-count7').textContent = count70;
 
   // Reco
+  const listItems71 = document.querySelectorAll('#rs-list1 li');
+  const count71 = listItems71.length;
+  document.getElementById('rs-count1').textContent = count71;
+
+  const listItems72 = document.querySelectorAll('#rs-list2 li');
+  const count72 = listItems72.length;
+  document.getElementById('rs-count2').textContent = count72;
+
+  const listItems73 = document.querySelectorAll('#rs-list3 li');
+  const count73 = listItems73.length;
+  document.getElementById('rs-count3').textContent = count73;
+
+  const listItems74 = document.querySelectorAll('#rs-list4 li');
+  const count74 = listItems74.length;
+  document.getElementById('rs-count4').textContent = count74;
+
+  const listItems75 = document.querySelectorAll('#rs-list5 li');
+  const count75 = listItems75.length;
+  document.getElementById('rs-count5').textContent = count75;
+
+  const listItems76 = document.querySelectorAll('#rs-list6 li');
+  const count76 = listItems76.length;
+  document.getElementById('rs-count6').textContent = count76;
+
+  const listItems77 = document.querySelectorAll('#rs-list7 li');
+  const count77 = listItems77.length;
+  document.getElementById('rs-count7').textContent = count77;
 }
 
 // Call the function on page load to set the initial count
@@ -368,6 +468,70 @@ function updateTotalArticleCount() {
   const totalArticles7 = totalArticles6 + parseInt(kubeCount.textContent) + parseInt(bashCount.textContent) + parseInt(linuxCount.textContent);
   document.getElementById('sysadmin-total-count').textContent = totalArticles7;
 
+  const prom1Count = document.getElementById('prom-count1');
+  const prom2Count = document.getElementById('prom-count2');
+  const prom3Count = document.getElementById('prom-count3');
+  const prom4Count = document.getElementById('prom-count4');
+  const prom5Count = document.getElementById('prom-count5');
+
+  const totalArticles8 = parseInt(prom1Count.textContent) + parseInt(prom2Count.textContent) + parseInt(prom3Count.textContent) + parseInt(prom4Count.textContent) + parseInt(prom5Count.textContent);
+  document.getElementById('prom-total-count').textContent = totalArticles8;
+
+  const mongoCount = document.getElementById('mongo-count');
+  const sqlCount = document.getElementById('sql-count');
+
+  const totalArticles9 = totalArticles8 + parseInt(mongoCount.textContent) +  parseInt(sqlCount.textContent);
+  document.getElementById('db-total-count').textContent = totalArticles9;
+
+  const viz1Count = document.getElementById('viz-count1');
+  const viz2Count = document.getElementById('viz-count2');
+  const viz3Count = document.getElementById('viz-count3');
+  const viz4Count = document.getElementById('viz-count4');
+  const viz5Count = document.getElementById('viz-count5');
+  const viz6Count = document.getElementById('viz-count6');
+  const viz7Count = document.getElementById('viz-count7');
+
+  const totalArticles10= parseInt(viz1Count.textContent) +  parseInt(viz2Count.textContent) + parseInt(viz3Count.textContent) + parseInt(viz4Count.textContent) + parseInt(viz5Count.textContent) + parseInt(viz6Count.textContent) + parseInt(viz7Count.textContent);
+  document.getElementById('viz-total-count').textContent = totalArticles10;
+
+  const rs1Count = document.getElementById('rs-count1');
+  const rs2Count = document.getElementById('rs-count2');
+  const rs3Count = document.getElementById('rs-count3');
+  const rs4Count = document.getElementById('rs-count4');
+  const rs5Count = document.getElementById('rs-count5');
+  const rs6Count = document.getElementById('rs-count6');
+  const rs7Count = document.getElementById('rs-count7');
+
+  const totalArticles11= parseInt(rs1Count.textContent) +  parseInt(rs2Count.textContent) + parseInt(rs3Count.textContent) + parseInt(rs4Count.textContent) + parseInt(rs5Count.textContent) + parseInt(rs6Count.textContent) + parseInt(rs7Count.textContent);
+  document.getElementById('rs-total-count').textContent = totalArticles11;
+
+  const ai1Count = document.getElementById('ai-count1');
+  const ai2Count = document.getElementById('ai-count2');
+  const ai3Count = document.getElementById('ai-count3');
+  const ai4Count = document.getElementById('ai-count4');
+  const ai5Count = document.getElementById('ai-count5');
+  const ai6Count = document.getElementById('ai-count6');
+
+  const totalArticles12= parseInt(ai1Count.textContent) + parseInt(ai2Count.textContent) + parseInt(ai3Count.textContent) + parseInt(ai4Count.textContent) + parseInt(ai5Count.textContent) + parseInt(ai6Count.textContent);
+  document.getElementById('ai-total-count').textContent = totalArticles12;
+
+  const sparkCount = document.getElementById('spark-count');
+
+  const totalArticles13= totalArticles10 + totalArticles11 + totalArticles12 + parseInt(sparkCount.textContent);
+  document.getElementById('advanced-total-count').textContent = totalArticles13;
+
+  const crypto1Count = document.getElementById('crypto-count');
+  const crypto2Count = document.getElementById('crypto-count2');
+  const crypto3Count = document.getElementById('crypto-count3');
+  const crypto4Count = document.getElementById('crypto-count4');
+
+  const totalArticles14= parseInt(crypto1Count.textContent) + parseInt(crypto2Count.textContent) + parseInt(crypto3Count.textContent) + parseInt(crypto4Count.textContent);
+  document.getElementById('crypto-total-count').textContent = totalArticles14;
+
+  const android2Count = document.getElementById('android-count2');
+
+  const totalArticles15= totalArticles2 + totalArticles9 + totalArticles13 + totalArticles7 + parseInt(android2Count.textContent) + totalArticles14;
+  document.getElementById('it-total-count').textContent = totalArticles15;
 }
 
 // Call the function on page load to set the initial counts

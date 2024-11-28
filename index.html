@@ -286,7 +286,7 @@
 			<h3 class="section-subheading-android" style="color: white; padding-top: 3%;">You can find bellow the list of articles I wrote in the past. Click on the topic of your interest and it will open the corresponding article.</h3>
 			<div class="centered-list-container" style="color: white">
 				<ul class="centered-list">
-					<b><li class="centered-list-item" onclick="toggleVisibility('coding-list')">IT | 274 articles</li></b>
+					<b><li class="centered-list-item" onclick="toggleVisibility('coding-list')">IT | <span id="it-total-count"></span> articles</li></b>
 					<ul id="coding-list" class="sub-centered-list hidden">
 						<li class="sub-centered-list-item" onclick="toggleVisibility('python-list')">Coding  | <span id="coding-total-count"></span> articles</li>
 						<ul id="python-list" class="sub-centered-list hidden">
@@ -384,11 +384,11 @@
 								<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/GO/Project4/project4.html" target=”_blank”>Capitals & countries</a></li>
 							</ul>
 						</ul>
-						<li class="sub-centered-list-item" onclick="toggleVisibility('db-list')">Databases | 36 articles</li>
+						<li class="sub-centered-list-item" onclick="toggleVisibility('db-list')">Databases | <span id="db-total-count"></span> articles</li>
 						<ul id="db-list" class="sub-centered-list hidden">
-							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list')">Prometheus | 27 articles</li>
+							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list')">Prometheus | <span id="prom-total-count"></span> articles</li>
 							<ul id="prom-list" class="sub-centered-list hidden">
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list1')">Basics | 9 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list1')">Basics | <span id="prom-count1"></span> articles</li>
 								<ul id="prom-list1" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Basics/Introduction.html" target=”_blank”>Introduction</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Basics/Data.html" target=”_blank”>Data</a></li>
@@ -400,14 +400,14 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Basics/Storage.html" target=”_blank”>Storage</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Basics/Gotchas.html" target=”_blank”>Gotchas</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list2')">Operators | 4 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list2')">Operators | <span id="prom-count2"></span> articles</li>
 								<ul id="prom-list2" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Operators/Aggregation.html" target=”_blank”>Aggregation</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Operators/Binary.html" target=”_blank”>Binary</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Operators/Matching.html" target=”_blank”>Matching</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Operators/Precedence.html" target=”_blank”>Preference</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list3')">Functions | 5 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list3')">Functions | <span id="prom-count3"></span> articles</li>
 								<ul id="prom-list3" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Functions/alert.html" target=”_blank”>Alert</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Functions/histogram.html" target=”_blank”>Histogram</a></li>
@@ -415,14 +415,14 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Functions/range.html" target=”_blank”>Range</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/Functions/time.html" target=”_blank”>Time shifting</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list4')">HTTP API | 4 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list4')">HTTP API | <span id="prom-count4"></span> articles</li>
 								<ul id="prom-list4" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/API/Querying.html" target=”_blank”>Querying</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/API/Result.html" target=”_blank”>Results</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/API/ServiceDiscovery.html" target=”_blank”>Service discovery</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Prom/API/Management.html" target=”_blank”>Management</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list5')">Projects | 5 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('prom-list5')">Projects | <span id="prom-count5"></span> articles</li>
 								<ul id="prom-list5" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Prom/Project1/Project1.html" target=”_blank”>Prometheus & Linux</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Prom/Project2/Project2.html" target=”_blank”>Personalized exporter</a></li>
@@ -447,11 +447,11 @@
 								<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Mongo/Project4/project4.html" target=”_blank”>Scrapping</a></li>
 							</ul>
 						</ul>
-						<li class="sub-centered-list-item" onclick="toggleVisibility('advanced-list')">Advanced | 129 articles</li>
+						<li class="sub-centered-list-item" onclick="toggleVisibility('advanced-list')">Advanced | <span id="advanced-total-count"></span> articles</li>
 						<ul id="advanced-list" class="sub-centered-list hidden">
-							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list')">Artificial intelligence | 56 articles</li>
+							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list')">Artificial intelligence | <span id="ai-total-count"></span> articles</li>
 							<ul id="ai-list" class="sub-centered-list hidden">
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list1')">Data processing | 7 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list1')">Data processing | <span id="ai-count1"></span> articles</li>
 								<ul id="ai-list1" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/DP/audio.html" target=”_blank”>Audio</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/DP/csv.html" target=”_blank”>CSV</a></li>
@@ -461,7 +461,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/DP/text.html" target=”_blank”>Text</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/DP/video.html" target=”_blank”>Video</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list2')">Neural network | 17 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list2')">Neural network | <span id="ai-count2"></span> articles</li>
 								<ul id="ai-list2" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/introduction.html" target=”_blank”>Introduction</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/activation.html" target=”_blank”>Activation</a></li>
@@ -472,7 +472,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/overfitting.html" target=”_blank”>Overfitting</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/regularization.html" target=”_blank”>Regularization</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/update.html" target=”_blank”>Updating Neural Network</a></li>
-									<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('nn-list')">Neural network Algorithms| 8 articles</li>
+									<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('nn-list')">Neural network Algorithms| <span id="ai-count3"></span> articles</li>
 									<ul id="nn-list" class="sub-centered-list hidden">
 										<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/autoencoder.html" target=”_blank”>Autoencoder</a></li>
 										<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/aae.html" target=”_blank”>Adversarial Autoencoder</a></li>
@@ -484,7 +484,7 @@
 										<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/NN/rnn.html" target=”_blank”>Recurrent Neural Network</a></li>
 									</ul>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list3')">Semi-supervised ML | 7 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list3')">Semi-supervised ML | <span id="ai-count4"></span> articles</li>
 								<ul id="ai-list3" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SSML/introduction.html" target=”_blank”>Introduction</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SSML/co.html" target=”_blank”>Co-training</a></li>
@@ -494,7 +494,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SSML/self.html" target=”_blank”>Self-training</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SSML/vat.html" target=”_blank”>Virtual adversarial training</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list4')">Supervised ML | 11 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list4')">Supervised ML | <span id="ai-count5"></span> articles</li>
 								<ul id="ai-list4" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SML/introduction.html" target=”_blank”>Introduction</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SML/cross-decomposition.html" target=”_blank”>Cross Decomposition</a></li>
@@ -508,7 +508,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SML/sgd.html" target=”_blank”>Stochastic gradient descent</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/SML/svm.html" target=”_blank”>Support vector machine</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list5')">Unsupervied ML | 7 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list5')">Unsupervied ML | <span id="ai-count6"></span> articles</li>
 								<ul id="ai-list5" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/UML/introduction.html" target=”_blank”>Introduction</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/UML/biclustering.html" target=”_blank”>Biclustering</a></li>
@@ -518,7 +518,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/UML/manifold.html" target=”_blank”>Manifold learning</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/AI/UML/pca.html" target=”_blank”>Principal component analysis</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list6')">Projects | 7 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('ai-list6')">Projects | <span id="ai-count7"></span> articles</li>
 								<ul id="ai-list6" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/AI/project1/project1.html" target=”_blank”>Comparison supervised models</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/AI/project2/project2.html" target=”_blank”>Comparison unsupervised models</a></li>
@@ -529,9 +529,9 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/AI/project7/project7.html" target=”_blank”>Tweet analysis</a></li>
 								</ul>
 							</ul>
-							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list')">Data Visualization | 41 articles</li>
+							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list')">Data Visualization | <span id="viz-total-count"></span> articles</li>
 							<ul id="viz-list" class="sub-centered-list hidden">
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list1')">Hierarchical | 6 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list1')">Hierarchical | <span id="viz-count1"></span> articles</li>
 								<ul id="viz-list1" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Hierarchical/sc.html" target=”_blank”>Sunburst charts</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Hierarchical/tree.html" target=”_blank”>Tree diagram</a></li>
@@ -540,7 +540,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Hierarchical/cd.html" target=”_blank”>Cluster dendrograms</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Hierarchical/comparison.html" target=”_blank”>Comparison</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list2')">Temporal | 6 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list2')">Temporal | <span id="viz-count2"></span> articles</li>
 								<ul id="viz-list2" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Temporal/line.html" target=”_blank”>Line graphs</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Temporal/area.html" target=”_blank”>Area charts</a></li>
@@ -549,7 +549,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Temporal/heat.html" target=”_blank”>Heatmap</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Temporal/comparison.html" target=”_blank”>Comparison</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list3')">Distribution | 6 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list3')">Distribution | <span id="viz-count3"></span> articles</li>
 								<ul id="viz-list3" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Distribution/violin.html" target=”_blank”>Violin</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Distribution/density.html" target=”_blank”>Density</a></li>
@@ -558,7 +558,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Distribution/ridgeline.html" target=”_blank”>Ridgeline</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Distribution/comparison.html" target=”_blank”>Comparison</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list4')">Ranking | 5 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list4')">Ranking | <span id="viz-count4"></span> articles</li>
 								<ul id="viz-list4" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Ranking/bar.html" target=”_blank”>Bar charts</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Ranking/lollipop.html" target=”_blank”>Lollipop</a></li>
@@ -566,7 +566,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Ranking/radar.html" target=”_blank”>Radar</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Ranking/comparison.html" target=”_blank”>Comparison</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list5')">Spatial | 5 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list5')">Spatial | <span id="viz-count5"></span> articles</li>
 								<ul id="viz-list5" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Spatial/choropleth.html" target=”_blank”>Chrolopeth maps</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Spatial/bubble.html" target=”_blank”>Bubble maps</a></li>
@@ -574,7 +574,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Spatial/flow.html" target=”_blank”>Flow maps</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Spatial/comparison.html" target=”_blank”>Comparison</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list6')">Correlation | 5 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list6')">Correlation | <span id="viz-count6"></span> articles</li>
 								<ul id="viz-list6" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Correlation/sp.html" target=”_blank”>Scatter plots</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Correlation/matrice.html" target=”_blank”>Correlation matrices</a></li>
@@ -582,7 +582,7 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Correlation/sankey.html" target=”_blank”>Sankey diagrams</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Viz/Correlation/comparison.html" target=”_blank”>Comparison</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list7')">Projects | 8 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('viz-list7')">Projects | <span id="viz-count7"></span> articles</li>
 								<ul id="viz-list7" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Viz/Project1/Project1.html" target=”_blank”>load_iris study</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Viz/Project2/project2.html" target=”_blank”>Good practices</a></li>
@@ -594,42 +594,42 @@
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Viz/Project8/project8.html" target=”_blank”>Plotting via CLI</a></li>
 								</ul>
 							</ul>
-							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list')">Recommendation systems | 19 articles</li>
+							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list')">Recommendation systems | <span id="rs-total-count"></span> articles</li>
 							<ul id="rs-list" class="sub-centered-list hidden">
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list1')">Introduction | 2 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list1')">Introduction | <span id="rs-count1"></span> articles</li>
 								<ul id="rs-list1" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Intro/definition.html" target=”_blank”>Definition</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Intro/importance.html" target=”_blank”>Importance</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list2')">Key components | 3 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list2')">Key components | <span id="rs-count2"></span> articles</li>
 								<ul id="rs-list2" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Key/data.html" target=”_blank”>Data</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Key/user-item.html" target=”_blank”>User / Item</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Key/metric.html" target=”_blank”>Metrics</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list3')">Algorithms | 3 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list3')">Algorithms | <span id="rs-count3"></span> articles</li>
 								<ul id="rs-list3" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Algos/collaborative.html" target=”_blank”>Collaborative Filtering</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Algos/content_based.html" target=”_blank”>Content-based</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Algos/hybrid.html" target=”_blank”>Hybrid</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list4')">Advanced | 3 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list4')">Advanced | <span id="rs-count4"></span> articles</li>
 								<ul id="rs-list4" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Advanced/matrix.html" target=”_blank”>Matrix factorization</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Advanced/deep.html" target=”_blank”>Deep learning</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Advanced/cold.html" target=”_blank”>Cold start problem</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list5')">Metrics | 2 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list5')">Metrics | <span id="rs-count5"></span> articles</li>
 								<ul id="rs-list5" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Metrics/evaluation.html" target=”_blank”>Evaluation</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Metrics/testing.html" target=”_blank”>Testing</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list6')">Applications | 2 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list6')">Applications | <span id="rs-count6"></span> articles</li>
 								<ul id="rs-list6" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Application/e-commerce.html" target=”_blank”>E-commerce</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/content/Reco/Application/music-movie.html" target=”_blank”>Music & Movie</a></li>
 								</ul>
-								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list7')">Projects | 4 articles</li>
+								<li class="sub-sub-sub-centered-list-item text-left" onclick="toggleVisibility('rs-list7')">Projects | <span id="rs-count7"></span> articles</li>
 								<ul id="rs-list7" class="sub-centered-list hidden">
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Reco/Project1/project1.html" target=”_blank”>Movie recommendation</a></li>
 									<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/projects/Reco/Project2/project2.html" target=”_blank”>Good practices</a></li>
@@ -726,7 +726,7 @@
 							<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/apps/wyrmspan-sheets/app.html" target=”_blank”>wyrmspan sheets</a></li>
 							<li class="sub-sub-sub-sub-centered-list-item text-left"><a href="https://ac-programming.com/apps/training-citizenship/app.html" target=”_blank”>training canadian citizenship</a></li>
 						</ul>
-						<li class="sub-centered-list-item" onclick="toggleVisibility('crypto-list')">Crypto | 12 articles</li>
+						<li class="sub-centered-list-item" onclick="toggleVisibility('crypto-list')">Crypto | <span id="crypto-total-count"></span> articles</li>
 						<ul id="crypto-list" class="sub-centered-list hidden">
 							<li class="sub-sub-centered-list-item text-left" onclick="toggleVisibility('crypto-list1')">Overview | <span id="crypto-count"></span> articles</li>
 							<ul id="crypto-list1" class="sub-centered-list hidden">
