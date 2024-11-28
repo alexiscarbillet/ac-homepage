@@ -269,6 +269,28 @@ function updateAppCount() {
   const count48 = listItems48.length;
   document.getElementById('docker-count8').textContent = count48;
 
+  // spark
+  const listItems49 = document.querySelectorAll('#spark-list li');
+  const count49 = listItems49.length;
+  document.getElementById('spark-count').textContent = count49;
+
+  // mongo
+  const listItems50 = document.querySelectorAll('#mongo-list li');
+  const count50 = listItems50.length;
+  document.getElementById('mongo-count').textContent = count50;
+
+  // sql
+  const listItems51 = document.querySelectorAll('#sql-list li');
+  const count51 = listItems51.length;
+  document.getElementById('sql-count').textContent = count51;
+
+  // prom
+
+  // AI
+
+  // Data Viz
+
+  // Reco
 }
 
 // Call the function on page load to set the initial count
