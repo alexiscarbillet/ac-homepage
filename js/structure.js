@@ -77,6 +77,10 @@ function updateAppCount() {
   const count3 = listItems3.length;
   document.getElementById('website-count').textContent = count3;
 
+  const listItemsDockerHub = document.querySelectorAll('#dockerhub-list li');
+  const countDockerHub = listItemsDockerHub.length;
+  document.getElementById('dockerhub-count').textContent = countDockerHub;
+
   // Python part
   const listItems4 = document.querySelectorAll('#python-list1 li');
   const count4 = listItems4.length;
@@ -269,6 +273,10 @@ function updateAppCount() {
   const count48 = listItems48.length;
   document.getElementById('docker-count8').textContent = count48;
 
+  const listItemsDocker = document.querySelectorAll('#docker-list9 li');
+  const countdocker = listItemsDocker.length;
+  document.getElementById('docker-count9').textContent = countdocker;
+
   // spark
   const listItems49 = document.querySelectorAll('#spark-list li');
   const count49 = listItems49.length;
@@ -457,8 +465,9 @@ function updateTotalArticleCount() {
   const docker6Count = document.getElementById('docker-count6');
   const docker7Count = document.getElementById('docker-count7');
   const docker8Count = document.getElementById('docker-count8');
+  const docker9Count = document.getElementById('docker-count9');
 
-  const totalArticles6 = parseInt(docker1Count.textContent) + parseInt(docker2Count.textContent) + parseInt(docker3Count.textContent) + parseInt(docker4Count.textContent) + parseInt(docker5Count.textContent) + parseInt(docker6Count.textContent) + parseInt(docker7Count.textContent) + parseInt(docker8Count.textContent);
+  const totalArticles6 = parseInt(docker1Count.textContent) + parseInt(docker2Count.textContent) + parseInt(docker3Count.textContent) + parseInt(docker4Count.textContent) + parseInt(docker5Count.textContent) + parseInt(docker6Count.textContent) + parseInt(docker7Count.textContent) + parseInt(docker8Count.textContent) + parseInt(docker9Count.textContent);
   document.getElementById('docker-total-count').textContent = totalArticles6;
 
   const kubeCount = document.getElementById('kube-count');
